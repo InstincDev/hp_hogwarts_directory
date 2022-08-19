@@ -1,9 +1,10 @@
 const express = require('express');
 const app = express();
+const expressLayouts = require('express-ejs-layouts')
 const connectDB = require("./config/db");
 const dotenv = require('dotenv');
 const methodOverride = require('method-override')
-const MongoStore = require('connect-mongo')
+
 
 
 //Load config
@@ -11,6 +12,8 @@ dotenv.config({path: './config/config.env'});
 
 connectDB();
 
+app.use(expressLayouts)
+app.set('layout', './layouts/main')
 app.set('view engine', 'ejs');
 // Static folder
 app.use(express.static('public'))
@@ -36,8 +39,7 @@ app.use(function (req, res, next) {
 })
 
 // Routes
-app.use("/", require('./routes/index'));
-app.use('/auth', require('./routes/auth'))
+app.use("/", require('./routes/home'))
 app.use('/stories', require('./routes/stories'))
 
 const PORT = process.env.PORT || 7000;
