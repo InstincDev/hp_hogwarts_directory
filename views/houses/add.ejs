@@ -1,30 +1,68 @@
-<h3>Add Story</h3>
+<h3>Add New Person</h3>
 <div class="row">
-    <form action="/stories" method="POST" class="col s12">
+    <form action="/houses/addPerson" method="POST" class="col s12">
         <div class="row">
             <div class="input-field">
-                <input type="text" id="title" name="title">
-                <label for="title">Title</label>
+                <input type="text" id="name" name="name">
+                <label for="name">Full Name</label>
             </div>
         </div>
-
+        <div class="row">
+            <div class="input-field">
+                <input type="text" id="gender" name="gender">
+                <label for="gender">Gender</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="input-field">
+                <input type="text" id="house" name="house">
+                <label for="house">House</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="input-field">
+                <input type="date" id="dob" name="dob">
+                <label for="dob">Date Of Birth</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="input-field">
+                <input type="text" id="ancestry" name="ancestry">
+                <label for="ancestry">Ancestry</label>
+            </div>
+        </div>
         <div class="row">
             <div class="input-field">
                 <select name="status" id="status">
-                    <option value="public" selected>Public</option>
-                    <option value="private">Private</option>
+                    <option value="student" selected>Student</option>
+                    <option value="staff">Staff</option>
+                    <option value="alumni">Alumni</option>
                 </select>
                 <label for="status">Status</label>
             </div>
         </div>
-
         <div class="row">
             <div class="input-field">
-                <h5>Tell Us Your Story:</h5>
-                <textarea name="body" id="body"></textarea>
+                <select name="alive" id="alive">
+                    <option value="true" selected>Alive</option>
+                    <option value="false">Deceased</option>
+                </select>
+                <label for="status">Alive</label>
             </div>
         </div>
-
+        <div class="row">
+            <div class="input-field">
+                <input type="text" id="actor" name="actor">
+                <label for="actor">Actor</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="input-field">
+                <input type="text" id="image" name="image">
+                <label for="image">Image Url</label>
+            </div>
+        </div>
+        </div>
         <div class="row">
             <input type="submit" value="Save" class="btn">
             <a href="/dashboard" class="btn orange">Cancel</a>

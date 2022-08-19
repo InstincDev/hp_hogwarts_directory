@@ -19,11 +19,10 @@ const CharacterSchema = new mongoose.Schema({
     ancestry: {
         type: String,
     },
-    student: {
-        type: Boolean,
-    },
-    staff: {
-        type: Boolean,
+    status: {
+        type: String,
+        default: 'student',
+        enum: ['student', 'staff', 'alumni'],
     },
     actors: {
         type: String,

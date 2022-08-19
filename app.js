@@ -3,6 +3,9 @@ const app = express();
 const expressLayouts = require('express-ejs-layouts')
 const connectDB = require("./config/db");
 const dotenv = require('dotenv');
+const homeRoutes = require('./routes/home')
+const rosterRoutes = require('./routes/roster')
+const housesRoutes = require('./routes/houses')
 const methodOverride = require('method-override')
 
 
@@ -39,8 +42,9 @@ app.use(function (req, res, next) {
 })
 
 // Routes
-app.use("/", require('./routes/home'))
-app.use('/stories', require('./routes/stories'))
+app.use("/", homeRoutes)
+app.use('/dashboard', rosterRoutes)
+app.use('/houses', housesRoutes)
 
 const PORT = process.env.PORT || 7000;
 
