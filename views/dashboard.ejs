@@ -1,6 +1,6 @@
 <h6></h6>
 <h3>Dashboard</h3>
-    <% if(!charData) { %>
+    <% if(charData.length != 0) { %>
         <table class="striped">
         <thead>
             <tr>
@@ -13,7 +13,7 @@
             <% charData.forEach( el => { %>
                 <tr>
                     <td>
-                        <a href="/houses/<%=el._id%>">
+                        <a href="./houses/person/<%=el._id%>">
                         <%= el.name %>
                         </a>
                     </td>

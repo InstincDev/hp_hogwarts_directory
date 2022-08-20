@@ -2,11 +2,10 @@ const express = require('express')
 const router = express.Router()
 const housesController = require('../controllers/houses')
 
-const Character = require('../models/Characters')
 
 // @desc    Show Person Page
 // @route   GET /houses/person
-router.get('/person', housesController.getPerson)
+router.get('/person/:id', housesController.getPerson)
 
 // @desc    Add Page
 // @route   GET /houses/add

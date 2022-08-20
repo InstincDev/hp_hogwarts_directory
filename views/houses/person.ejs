@@ -1,25 +1,24 @@
 <div class="row">
     <div class="col s12 m8">
         <h3>
-            Person Name
+            <%= person.name %>
         </h3>
         <div class="card story">
             <div class="card-content">
                 <table class="striped">
-                    <thead>
-                        <tr>
-                            <th>Name</th>
-                        </tr>
-                    </thead>
                     <tbody>
+                        <% for(let el in person ) { %>
                             <tr>
+                                <% if(el != "_id" && el != "image" && el != "__v"){%> 
+                                <th>
+                                    <%= el %>:
+                                </th>
                                 <td>
-                                    <a href="#">
-                                   Person Data
-                                    </a>
+                                    <%= person[el] %>      
                                 </td>
+                                <% } %>  
                             </tr>
-                       
+                        <% } %>
                     </tbody>
                 </table>
             </div>
@@ -29,7 +28,7 @@
         <div class="card center-align">
             <div class="card-content">
                 <!-- Change: add 'referrerpolicy="no-referrer"' to stop google from blocking access to the profile images -->
-                <img src="#" referrerpolicy="no-referrer" class="circle responsive-img img-small">
+                <img src="<%= person.image %>" class="circle responsive-img img-small">
             </div>
         </div>
     </div>
