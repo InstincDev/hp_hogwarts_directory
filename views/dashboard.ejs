@@ -1,7 +1,7 @@
 <h6></h6>
 <h3>Dashboard</h3>
-<% if (people) {%>
-    <table class="striped">
+    <% if(!charData) { %>
+        <table class="striped">
         <thead>
             <tr>
                 <th>Name</th>
@@ -10,7 +10,7 @@
             </tr>
         </thead>
         <tbody>
-            <% people.forEach( el => { %>
+            <% charData.forEach( el => { %>
                 <tr>
                     <td>
                         <a href="/houses/<%=el._id%>">
@@ -25,7 +25,7 @@
                 </tr>
             <% }) %>
         </tbody>
-    </table>
-<% } else { %>
+        </table>
+    <% } else { %>
     <p>You have not created any stories.</p>
 <% } %>

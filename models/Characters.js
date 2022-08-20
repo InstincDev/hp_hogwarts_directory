@@ -32,7 +32,7 @@ const CharacterSchema = new mongoose.Schema({
     },
     image: {
         type: String,
-    },
+    }
 })
 
 module.exports = mongoose.model('Character', CharacterSchema)
