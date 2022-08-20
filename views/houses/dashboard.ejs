@@ -1,31 +1,27 @@
-<h6><% house %> </h6>
+<h6><% house %></h6>
 <h3>Dashboard</h3>
 <% if (people) {%>
-    <table class="striped">
-        <thead>
-            <tr>
-                <th>Name</th>
-                <th>Status</th>
-                <th></th>
-            </tr>
-        </thead>
-        <tbody>
-            <% people.forEach( el => { %>
-                <tr>
-                    <td>
-                        <a href="/houses/<%=el._id%>">
-                        <%= el.name %>
-                        </a>
-                    </td>
-                    <td>
-                        <span class="dash-status">
-                          <%= el.status %>
-                        </span>
-                    </td>
-                </tr>
-            <% }) %>
-        </tbody>
-    </table>
+<table class="striped">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Status</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        <% people.forEach( el => { %>
+        <tr>
+            <td>
+                <a href="/houses/<%=el._id%>"> <%= el.name %> </a>
+            </td>
+            <td>
+                <span class="dash-status"> <%= el.status %> </span>
+            </td>
+        </tr>
+        <% }) %>
+    </tbody>
+</table>
 <% } else { %>
-    <p>You have not created any stories.</p>
+<p>You have not created any stories.</p>
 <% } %>

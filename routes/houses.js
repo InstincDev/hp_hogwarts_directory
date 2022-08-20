@@ -7,9 +7,7 @@ const housesController = require('../controllers/houses')
 // @route   GET /houses/person
 router.get('/person/:id', housesController.getPerson)
 
-// @desc    Add Page
-// @route   GET /houses/add
-router.get('/add', housesController.getAddForm)
+
 
 // @desc    Process add form
 // @route   POST /houses

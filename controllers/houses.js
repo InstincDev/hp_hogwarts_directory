@@ -18,13 +18,7 @@ module.exports = {
         }
       
   },
-    getAddForm: (req, res)=>{
-        try{
-            res.render('houses/add')
-        } catch (err){
-            console.error(err)
-        }
-    },
+   
     addPerson: async (req, res) => {
         try {
             console.log(req.body)
