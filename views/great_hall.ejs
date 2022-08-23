@@ -1,32 +1,38 @@
-<div class="GH_room">
-    <h3>Great Hall</h3>
+<div class="gh_room">
+    
+    <div class="row">
+    <div class="card gh_title col s12 m6">
+        <div class="card-content center">
+            <h3 class="bold">Great Hall</h3>
+        </div> 
+        
+    </div>
+    <div class="card gh_data center row col">
         <% if(charData.length != 0) { %>
-            <table class="striped">
+        <table class="striped">
             <thead>
                 <tr>
-                    <th>Name</th>
-                    <th>Status</th>
-                    <th></th>
+                    <th class="bold">Name</th>
+                    <th class="bold">Status</th>
                 </tr>
             </thead>
             <tbody>
                 <% charData.forEach( el => { %>
-                    <tr>
-                        <td>
-                            <a href="./houses/person/<%=el._id%>">
-                            <%= el.name %>
-                            </a>
-                        </td>
-                        <td>
-                            <span class="dash-status">
-                            <%= el.status %>
-                            </span>
-                        </td>
-                    </tr>
+                <tr>
+                    <td>
+                        <a href="./houses/person/<%=el._id%>"> <%= el.name %> </a>
+                    </td>
+                    <td>
+                        <span class="dash-status"> <%= el.status %> </span>
+                    </td>
+                </tr>
                 <% }) %>
             </tbody>
-            </table>
+        </table>
         <% } else { %>
         <p>You have not added any Characters.</p>
-    <% } %>
+        <% } %>
+    </div>
+    
+</div>
 </div>

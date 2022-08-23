@@ -1,16 +1,15 @@
+html{
+    color: #5b4737 !important;
+}
+
 p{
-    margin: 10px !important;
+    color: #5b4737!important;
+    /* margin: 10px !important; */
 }
 
-h3{ margin: 0;}
-
-.fa-small{
-    font-size: 16px !important;
-}
-
-.btn-float{
-    float: left;
-    margin-right: 10px;
+h3{
+    margin: 0;
+    color: #5b4737!important;
 }
 
 .container{
@@ -19,10 +18,90 @@ h3{ margin: 0;}
 }
 
 .Hogwarts{
-    background: black !important;
+    background: #ebca96 !important;
 }
 
+/* Buttons */
+.fa-small{
+    font-size: 16px !important;
+}
+
+.btn-float{
+    left: 23px !important;
+}
+ 
+.header{
+    background:#5b4737 !important;
+}
+
+/* _header */
+
+.header a{
+    color:#ebca96 !important;
+}
+
+.bold{
+    font-weight: 700 !important;
+}
+
+.sidenav{
+    background:#5b4737 !important;
+}
+
+.sidenav> li:hover{
+    background:#3b2f24 !important;
+}
+
+/* Forms */
+input{
+    border-color: #3b2f24 !important;
+}
+
+input:focus{
+    border-bottom: 1px solid #3b2f24 !important;
+    box-shadow: 0 1px 0 0 #3b2f24 !important;
+}
+
+dropdown-content li > a, .dropdown-content li > span{
+    color: #5b4737 !important;
+}
+
+.input-field > label{
+    color: #5b4737 !important;
+
+}
+
+/* Tables */
+
+.card{ 
+    background-color: #ebca9688
+}
+
+
+
+/* Great Hall */
+
+.gh_room{
+    margin: 0 !important;
+    padding: 30px 150px;
+    background: url(../images/gh_img.jpg) center center no-repeat !important;
+    /* background-size: stretch !important; */
+}
+
+.gh_title h3{
+    color: #3b2f24 !important;
+}
+
+.gh_data{
+    margin: 0 !important;
+}
+
+
 /* Gryffindor Common Room */
+
+.gryffindor:hover{
+    background: darkred !important;
+}
 
 .Gryffindor_info{
     background: darkred !important;
@@ -45,6 +124,10 @@ h3{ margin: 0;}
 
 /* Sytherin Common Room */
 
+.slytherin:hover{
+    background: darkgreen !important;
+}
+
 .Slytherin_info{
     background: darkgreen !important;
     border: solid 3px silver !important;
@@ -59,11 +142,16 @@ h3{ margin: 0;}
    color: silver !important;
 }
 
-.Gryffindor_img{
+.Slytherin_img{
     background: silver !important;
 }
 
 /* Hufflepuff Common Room */
+
+.hufflepuff:hover{
+    background: goldenrod !important;
+    color:#3b2f24 !important;
+}
 
 .Hufflepuff_info{
     background: goldenrod !important;
@@ -85,9 +173,12 @@ h3{ margin: 0;}
 
 /* Ravenclaw Common Room */
 
+.ravenclaw:hover{
+    background: blue !important;
+}
+
 .Ravenclaw_info{
     background: blue !important;
-    border: solid 3px brown !important;
 }
 
 .Ravenclaw_room{
@@ -102,17 +193,5 @@ h3{ margin: 0;}
 .Ravenclaw_img{
     background: brown !important;
 }
-
-/* Great Hall Common Room */
-
-.GH_room{
-    background: url(../images/gh_img.jpg) center center fixed no-repeat !important;
-    background-size: stretch !important;
-}
-
-.GH_title{
-   color: gold !important;
-}
-
 
 
