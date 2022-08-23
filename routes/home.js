@@ -8,7 +8,7 @@ const homeController = require('../controllers/home')
 router.get( '/', homeController.getLandingPg)
 
 // @desc    Add Page
-// @route   GET /houses/add
+// @route   GET /add
 router.get('/add', homeController.getAddForm)
 
 module.exports = router

@@ -5,7 +5,7 @@ module.exports = {
         try{
             const charData = await Character.find()
             
-            res.render('dashboard', {charData})
+            res.render('great_hall', {charData})
         }catch (err) {
             console.log(err)
         }

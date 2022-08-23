@@ -2,11 +2,7 @@ p{
     margin: 10px !important;
 }
 
-.login-container{
-    width: 400px;
-    margin-top: 50px;
-    text-align: center;
-}
+h3{ margin: 0;}
 
 .fa-small{
     font-size: 16px !important;
@@ -17,6 +13,106 @@ p{
     margin-right: 10px;
 }
 
-.img-small{
-    width: 180px;
+.container{
+    width: 100% !important;
+    height: 100vh !important;
 }
+
+.Hogwarts{
+    background: black !important;
+}
+
+/* Gryffindor Common Room */
+
+.Gryffindor_info{
+    background: darkred !important;
+    border: solid 3px gold !important;
+}
+
+.Gryffindor_room{
+    height: inherit;
+    background: url(../images/gryffindor.webp) center center fixed no-repeat !important;
+    background-size: cover !important;
+}
+
+.Gryffindor_name{
+   color: gold !important;
+}
+
+.Gryffindor_img{
+    background: gold !important;
+}
+
+/* Sytherin Common Room */
+
+.Slytherin_info{
+    background: darkgreen !important;
+    border: solid 3px silver !important;
+}
+
+.Slytherin_room{
+    background: url(../images/gryffindor.webp) center center fixed no-repeat !important;
+    background-size: stretch !important;
+}
+
+.Slytherin_name{
+   color: silver !important;
+}
+
+.Gryffindor_img{
+    background: silver !important;
+}
+
+/* Hufflepuff Common Room */
+
+.Hufflepuff_info{
+    background: goldenrod !important;
+    border: solid 3px black !important;
+}
+
+.Hufflepuff_room{
+    background: url(../images/gryffindor.webp) center center fixed no-repeat !important;
+    background-size: stretch !important;
+}
+
+.Hufflepuff_name{
+   color: black !important;
+}
+
+.Hufflepuff_img{
+    background: black !important;
+}
+
+/* Ravenclaw Common Room */
+
+.Ravenclaw_info{
+    background: blue !important;
+    border: solid 3px brown !important;
+}
+
+.Ravenclaw_room{
+    background: url(../images/ravenclaw.webp) center center fixed no-repeat !important;
+    background-size: stretch !important;
+}
+
+.Ravenclaw_name{
+   color: blue !important;
+}
+
+.Ravenclaw_img{
+    background: brown !important;
+}
+
+/* Great Hall Common Room */
+
+.GH_room{
+    background: url(../images/gh_img.jpg) center center fixed no-repeat !important;
+    background-size: stretch !important;
+}
+
+.GH_title{
+   color: gold !important;
+}
+
+
+

@@ -1,30 +1,27 @@
 <h3>Gryffindor</h3>
-    <% if(charData.length != 0) { %>
-        <table class="striped">
+<% if(charData.length != 0) { %>
+<div class="card">
+    <table class="striped">
         <thead>
             <tr>
                 <th>Name</th>
                 <th>Status</th>
-                <th></th>
             </tr>
         </thead>
         <tbody>
             <% charData.forEach( el => { %>
-                <tr>
-                    <td>
-                        <a href="./person/<%=el._id%>">
-                        <%= el.name %>
-                        </a>
-                    </td>
-                    <td>
-                        <span class="dash-status">
-                          <%= el.status %>
-                        </span>
-                    </td>
-                </tr>
+            <tr>
+                <td>
+                    <a href="./person/<%=el._id%>"> <%= el.name %> </a>
+                </td>
+                <td>
+                    <span class="dash-status"> <%= el.status %> </span>
+                </td>
+            </tr>
             <% }) %>
         </tbody>
-        </table>
+    </table>
     <% } else { %>
     <p>You have not added any Characters.</p>
-<% } %>
+    <% } %>
+</div>

@@ -1,18 +1,19 @@
-<h3>Ravenclaw</h3>
+<div class="GH_room">
+    <h3>Great Hall</h3>
         <% if(charData.length != 0) { %>
-            <div class="card">
             <table class="striped">
             <thead>
                 <tr>
                     <th>Name</th>
                     <th>Status</th>
+                    <th></th>
                 </tr>
             </thead>
             <tbody>
                 <% charData.forEach( el => { %>
                     <tr>
                         <td>
-                            <a href="./person/<%=el._id%>">
+                            <a href="./houses/person/<%=el._id%>">
                             <%= el.name %>
                             </a>
                         </td>

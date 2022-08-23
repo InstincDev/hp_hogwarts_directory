@@ -36,7 +36,7 @@ module.exports = {
             if(!charData){
                 return res.render('errors/404')
             } 
-            res.render('houses/gryffindors',{charData})
+            res.render('houses/gryffindors',{charData, room:"Gryffindor"})
         } catch (err){
               console.error(err)
               res.render('errors/404')
