@@ -7,11 +7,20 @@ module.exports = {
        }
         
     },
-    getAddForm: (req, res)=>{
+    getAddPersonForm: (req, res)=>{
      try{
-         res.render('add')
+         res.render('add_person')
      } catch (err){
          console.error(err)
+         res.render('errors/404')
      }
  },
+ getAddRoomForm: (req, res)=>{
+    try{
+        res.render('add_room')
+    } catch (err){
+        console.error(err)
+        res.render('errors/404')
+    }
+},
 }

@@ -3,7 +3,7 @@ const mongoose = require('mongoose')
 const RoomSchema = new mongoose.Schema({
     name: {
         type: String,
-        required: true,
+        required: true, 
     },
     location: {
         type: String,
@@ -13,7 +13,7 @@ const RoomSchema = new mongoose.Schema({
         type: String,
     },
     security: {
-        type: text,
+        type: String,
     },
     description: {
         type: String,
