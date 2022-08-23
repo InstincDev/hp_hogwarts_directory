@@ -21,6 +21,13 @@ h3{
     background: #ebca96 !important;
 }
 
+.bold{
+    font-weight: 700 !important;
+}
+
+.img_fit{
+    margin-bottom: 0 !important;
+}
 /* Buttons */
 .fa-small{
     font-size: 16px !important;
@@ -40,9 +47,7 @@ h3{
     color:#ebca96 !important;
 }
 
-.bold{
-    font-weight: 700 !important;
-}
+
 
 .sidenav{
     background:#5b4737 !important;
@@ -83,7 +88,6 @@ dropdown-content li > a, .dropdown-content li > span{
 
 .gh_room{
     margin: 0 !important;
-    padding: 30px 150px;
     background: url(../images/gh_img.jpg) center center no-repeat !important;
     /* background-size: stretch !important; */
 }
@@ -92,8 +96,13 @@ dropdown-content li > a, .dropdown-content li > span{
     color: #3b2f24 !important;
 }
 
-.gh_data{
-    margin: 0 !important;
+.gh_data a, .gh_data span{
+   color:#070503;
+}
+
+.gh_data thead{
+    color: #ebca96;
+    text-transform: uppercase ;
 }
 
 
