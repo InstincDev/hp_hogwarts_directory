@@ -48,6 +48,7 @@ h3{
 }
 
 
+/* Nav */
 
 .sidenav{
     background:#5b4737 !important;
@@ -56,6 +57,7 @@ h3{
 .sidenav> li:hover{
     background:#3b2f24 !important;
 }
+
 
 /* Forms */
 input{
@@ -82,6 +84,12 @@ dropdown-content li > a, .dropdown-content li > span{
     background-color: #ebca9688
 }
 
+.crest{
+    background: url(../images/house-crest-ravenclaw.png)  center no-repeat !important;
+}
+
+/* Index */
+
 
 
 /* Great Hall */
@@ -106,15 +114,28 @@ dropdown-content li > a, .dropdown-content li > span{
 }
 
 
+
 /* Gryffindor Common Room */
 
+.gryffindor{
+    background: #740001 !important;
+}
+
 .gryffindor:hover{
-    background: darkred !important;
+    background: #740001 !important;
+}
+
+.gryffindor-card, .gryffindor-card p {
+    color: #ebca96 !important;
+}
+
+.gryffindor-card{
+    padding-bottom: 9px !important;
 }
 
 .Gryffindor_info{
-    background: darkred !important;
-    border: solid 3px gold !important;
+    background: #740001 !important;
+    border: solid 3px #d3a625 !important;
 }
 
 .Gryffindor_room{
@@ -124,22 +145,30 @@ dropdown-content li > a, .dropdown-content li > span{
 }
 
 .Gryffindor_name{
-   color: gold !important;
+   color: #d3a625 !important;
 }
 
 .Gryffindor_img{
-    background: gold !important;
+    background: #d3a625 !important;
 }
 
 /* Sytherin Common Room */
 
+.slytherin{
+    background: #1a472a !important;
+}
+
 .slytherin:hover{
-    background: darkgreen !important;
+    background: #1a472a !important;
+}
+
+.slytherin-card, .slytherin-card p {
+    color: #ebca96 !important;
 }
 
 .Slytherin_info{
-    background: darkgreen !important;
-    border: solid 3px silver !important;
+    background: #1a472a !important;
+    border: solid 3px #5d5d5d !important;
 }
 
 .Slytherin_room{
@@ -148,23 +177,31 @@ dropdown-content li > a, .dropdown-content li > span{
 }
 
 .Slytherin_name{
-   color: silver !important;
+   color: #5d5d5d !important;
 }
 
 .Slytherin_img{
-    background: silver !important;
+    background: #5d5d5d !important;
 }
 
 /* Hufflepuff Common Room */
 
+.hufflepuff{
+    background: #fff4b1 !important;
+}
+
 .hufflepuff:hover{
-    background: goldenrod !important;
+    background: #fff4b1 !important;
     color:#3b2f24 !important;
 }
 
+.hufflepuff-card {
+    color: #3b2f24 !important;
+}
+
 .Hufflepuff_info{
-    background: goldenrod !important;
-    border: solid 3px black !important;
+    background: #fff4b1 !important;
+    border: solid 3px #212121 !important;
 }
 
 .Hufflepuff_room{
@@ -173,21 +210,34 @@ dropdown-content li > a, .dropdown-content li > span{
 }
 
 .Hufflepuff_name{
-   color: black !important;
+   color: #212121 !important;
 }
 
 .Hufflepuff_img{
-    background: black !important;
+    background: #212121 !important;
 }
 
 /* Ravenclaw Common Room */
 
-.ravenclaw:hover{
-    background: blue !important;
+.ravenclaw{
+    background: #0e1a40 !important;
 }
 
+.ravenclaw:hover{
+    background: #0e1a40 !important;
+}
+
+.ravenclaw-card, .ravenclaw-card p {
+    color: #ebca96 !important;
+}
+
+.ravenclaw-card{
+    padding-bottom: 22px !important;
+}
+
+
 .Ravenclaw_info{
-    background: blue !important;
+    background: #0e1a40 !important;
 }
 
 .Ravenclaw_room{
@@ -196,11 +246,11 @@ dropdown-content li > a, .dropdown-content li > span{
 }
 
 .Ravenclaw_name{
-   color: blue !important;
+   color: #0e1a40 !important;
 }
 
 .Ravenclaw_img{
-    background: brown !important;
+    background: #946b2d !important;
 }
 
 
