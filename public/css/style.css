@@ -236,20 +236,20 @@ dropdown-content li > a, .dropdown-content li > span{
 }
 
 
-.Ravenclaw_info{
+.ravenclaw_info{
     background: #0e1a40 !important;
 }
 
-.Ravenclaw_room{
+.ravenclaw_room{
     background: url(../images/ravenclaw.webp) center center fixed no-repeat !important;
     background-size: stretch !important;
 }
 
-.Ravenclaw_name{
+.ravenclaw_name{
    color: #0e1a40 !important;
 }
 
-.Ravenclaw_img{
+.ravenclaw_img{
     background: #946b2d !important;
 }
 

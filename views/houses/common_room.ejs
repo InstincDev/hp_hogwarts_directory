@@ -1,5 +1,5 @@
-<div class="<%=room.house %>_room">
-    <h3>Gryffindor</h3>
+<div class="<%=room %>_room">
+    <h3><%= room.toUpperCase()%></h3>
     <div class="row">
         <div class="col s6 m4">
             <% if(charData.length != 0) { %>
@@ -32,7 +32,7 @@
         <div class="col s6 m2">
             <div class="card center-align <%= room.house %>_info">
                 <div class="card-content ">
-                    <p> <%= room.description></p>
+                    <p> <%= room.description%></p>
                 </div>
                 <div class="cards-tabs">
                     <ul class="tabs tabs_fixed_width">

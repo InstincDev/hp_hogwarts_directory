@@ -30,58 +30,17 @@ module.exports = {
         }
     },
 
-    getGryffindors: async (req, res) => {
+    getCommonRoom: async (req, res) => {
         try{
-            let charData = await Character.find({house:"Gryffindor"}).lean() 
+            let charData = await Character.find({house: req.params.house}).lean() 
             if(!charData){
                 return res.render('errors/404')
             } 
-            res.render('houses/gryffindors',{charData, room:"Gryffindor"})
+            res.render('houses/common_room',{charData, room: req.params.house})
         } catch (err){
               console.error(err)
               res.render('errors/404')
         }
       
-  },
-    getSlytherins: async (req, res) => {
-        try{
-            let charData = await Character.find({house:"Slytherin"}).lean() 
-            if(!charData){
-                return res.render('errors/404')
-            } 
-            res.render('houses/slytherins',{charData})
-        } catch (err){
-            console.error(err)
-            res.render('errors/404')
-        }
-  
-    },
-    getHufflepuffs: async (req, res) => {
-    try{
-        let charData = await Character.find({house:"Hufflepuff"}).lean() 
-        if(!charData){
-            return res.render('errors/404')
-        } 
-        res.render('houses/hufflepuffs',{charData})
-    } catch (err){
-          console.error(err)
-          res.render('errors/404')
-    }
-  
-},
-    getRavenclaws: async (req, res) => {
-        try{
-            let charData = await Character.find({house:"Ravenclaw"}).lean() 
-            if(!charData){
-                return res.render('errors/404')
-            } 
-            res.render('houses/ravenclaws',{charData})
-        } catch (err){
-              console.error(err)
-              res.render('errors/404')
-        }
-      
-  },
-
-    
+  }
 }
