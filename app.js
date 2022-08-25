@@ -4,9 +4,9 @@ const expressLayouts = require("express-ejs-layouts");
 const connectDB = require("./config/db");
 const dotenv = require("dotenv");
 const homeRoutes = require("./routes/home");
-const rosterRoutes = require("./routes/roster");
+const great_hallRoutes = require("./routes/great_hall");
 const housesRoutes = require("./routes/houses");
-const methodOverride = require("method-override");
+
 
 //Load config
 dotenv.config({ path: "./config/config.env" });
@@ -24,7 +24,7 @@ app.use(express.json());
 
 // Routes
 app.use("/", homeRoutes);
-app.use("/great_hall", rosterRoutes);
+app.use("/great_hall", great_hallRoutes);
 app.use("/houses", housesRoutes);
 
 const PORT = process.env.PORT || 7000;

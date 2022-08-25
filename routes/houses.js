@@ -3,11 +3,11 @@ const router = express.Router();
 const housesController = require("../controllers/houses");
 
 // @desc    Show Person Page
-// @route   GET /houses/person
+// @route   GET /houses/person/:id
 router.get("/person/:id", housesController.getPerson);
 
-// @desc    Show Gryffindors Page
-// @route   GET /houses/gryffindors
+// @desc    Show Common Room Page
+// @route   GET /houses/common_room/:house
 router.get("/common_room/:house", housesController.getCommonRoom);
 
 // @desc    Process add form
