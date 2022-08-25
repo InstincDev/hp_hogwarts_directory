@@ -1,28 +1,34 @@
 <div class="<%= person.house %>_room">
     <div class="row">
-        <div class="col s12 m8">
-            <h3 class="<%= person.house %>_name">
+        <div class="col s12 m5 offset-m2">
+            <div class="card col s12 m12 <%=person.house%>_data <%=person.house%>_name">
+                <div class="card-content center">
+                    <h3 class="bold">
                 <%= person.name %>
             </h3>
-            <div class="card <%= person.house %>_info">
-                <div class="card-content">
-                    <table class="striped">
+                </div>
+            </div>
+            
+            <div class="col center row s12 m12">
+                <div class="card <%= person.house %>_data bold col s12 m12">
+                    <table class="card-content card center striped">
                         <tbody>
                             <% for(let el in person ) { %>
                             <tr>
                                 <% if(el != "_id" && el != "image" && el !=
                                 "__v"){%>
-                                <th><%= el %>:</th>
-                                <td><%= person[el] %></td>
+                                <th class="card center"><%= el %>:</th>
+                                <td class="center"><%= person[el] %></td>
                                 <% } %>
                             </tr>
                             <% } %>
                         </tbody>
                     </table>
-                </div>
             </div>
+            </div>
+            
         </div>
-        <div class="col s12 m4">
+        <div class="col s12 m4 offset-m1">
             <div class="card center-align <%= person.house %>_img">
                 <div class="card-content">
                     <!-- Change: add 'referrerpolicy="no-referrer"' to stop google from blocking access to the profile images -->

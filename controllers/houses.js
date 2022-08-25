@@ -32,7 +32,9 @@ module.exports = {
 
     getCommonRoom: async (req, res) => {
         try{
+            
             let charData = await Character.find({house: req.params.house}).lean() 
+            
             if(!charData){
                 return res.render('errors/404')
             } 

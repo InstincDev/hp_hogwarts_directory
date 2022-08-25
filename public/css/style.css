@@ -21,6 +21,14 @@ h3{
     background: #ebca96 !important;
 }
 
+.hogwarts_crest{
+    margin-top:  150px !important;
+}
+
+.hogwarts_card:hover{
+    background: #212121 !important;
+}
+
 .bold{
     font-weight: 700 !important;
 }
@@ -84,14 +92,6 @@ dropdown-content li > a, .dropdown-content li > span{
     background-color: #ebca9688
 }
 
-.crest{
-    background: url(../images/house-crest-ravenclaw.png)  center no-repeat !important;
-}
-
-/* Index */
-
-
-
 /* Great Hall */
 
 .gh_room{
@@ -115,16 +115,14 @@ dropdown-content li > a, .dropdown-content li > span{
 
 
 
-/* Gryffindor Common Room */
+/* Gryffindor */
 
-.gryffindor{
-    background: #740001 !important;
-}
-
+/* sidenav */
 .gryffindor:hover{
     background: #740001 !important;
 }
 
+/* Home Page */
 .gryffindor-card, .gryffindor-card p {
     color: #ebca96 !important;
 }
@@ -133,7 +131,8 @@ dropdown-content li > a, .dropdown-content li > span{
     padding-bottom: 9px !important;
 }
 
-.Gryffindor_info{
+/* Common Room */
+.Gryffindor_data{
     background: #740001 !important;
     border: solid 3px #d3a625 !important;
 }
@@ -144,7 +143,7 @@ dropdown-content li > a, .dropdown-content li > span{
     background-size: cover !important;
 }
 
-.Gryffindor_name{
+.Gryffindor_name h3{
    color: #d3a625 !important;
 }
 
@@ -152,31 +151,31 @@ dropdown-content li > a, .dropdown-content li > span{
     background: #d3a625 !important;
 }
 
-/* Sytherin Common Room */
+/* Sytherin */
 
-.slytherin{
-    background: #1a472a !important;
-}
-
+/* Sidenav */
 .slytherin:hover{
     background: #1a472a !important;
 }
 
+/* Home Page */
 .slytherin-card, .slytherin-card p {
     color: #ebca96 !important;
 }
 
+/* Common Room */
 .Slytherin_info{
     background: #1a472a !important;
     border: solid 3px #5d5d5d !important;
 }
 
 .Slytherin_room{
-    background: url(../images/gryffindor.webp) center center fixed no-repeat !important;
-    background-size: stretch !important;
+    height: inherit;
+    background: url(../images/slytherin.jpg) center center fixed no-repeat !important;
+    background-size: cover !important;
 }
 
-.Slytherin_name{
+.Slytherin_name h3{
    color: #5d5d5d !important;
 }
 
@@ -184,19 +183,31 @@ dropdown-content li > a, .dropdown-content li > span{
     background: #5d5d5d !important;
 }
 
-/* Hufflepuff Common Room */
+/* Hufflepuff */
 
-.hufflepuff{
-    background: #fff4b1 !important;
-}
 
+
+/* Sidenav */
 .hufflepuff:hover{
-    background: #fff4b1 !important;
     color:#3b2f24 !important;
+    background: #fff4b1 !important;
+    
 }
 
+/* Home Page */
 .hufflepuff-card {
-    color: #3b2f24 !important;
+    color: #ebca96 !important;
+}
+
+.hufflepuff-card p{
+    color:#ebca96 !important;
+} 
+
+/* Common Room */
+
+.Hufflepuff_table_right{
+    float: right !important;
+    margin-right: 40px !important;
 }
 
 .Hufflepuff_info{
@@ -205,11 +216,12 @@ dropdown-content li > a, .dropdown-content li > span{
 }
 
 .Hufflepuff_room{
-    background: url(../images/gryffindor.webp) center center fixed no-repeat !important;
-    background-size: stretch !important;
+    height: inherit;
+    background: url(../images/hufflepuff.jpg) center center fixed no-repeat !important;
+    background-size: cover !important;
 }
 
-.Hufflepuff_name{
+.Hufflepuff_name h3{
    color: #212121 !important;
 }
 
@@ -217,16 +229,14 @@ dropdown-content li > a, .dropdown-content li > span{
     background: #212121 !important;
 }
 
-/* Ravenclaw Common Room */
+/* Ravenclaw */
 
-.ravenclaw{
-    background: #0e1a40 !important;
-}
-
+/* Sidenav */
 .ravenclaw:hover{
     background: #0e1a40 !important;
 }
 
+/* Home Page */
 .ravenclaw-card, .ravenclaw-card p {
     color: #ebca96 !important;
 }
@@ -235,22 +245,40 @@ dropdown-content li > a, .dropdown-content li > span{
     padding-bottom: 22px !important;
 }
 
+/* Common Room */
 
-.ravenclaw_info{
-    background: #0e1a40 !important;
+.Ravenclaw_table_right{
+    float: right !important;
+    margin-right: 40px !important;
 }
 
-.ravenclaw_room{
+.Ravenclaw_data a, .Ravenclaw_data tr{
+    color: #0e1a40;
+}
+
+.Ravenclaw_data th{
+    color: #946b2d;
+    text-transform: uppercase;
+}
+
+.Ravenclaw_data{
+    background: #0e1a40aa !important;
+    border: solid 3px #946b2d !important;
+}
+
+.Ravenclaw_room{
+    height: inherit;
     background: url(../images/ravenclaw.webp) center center fixed no-repeat !important;
-    background-size: stretch !important;
+    background-size: cover !important;
 }
 
-.ravenclaw_name{
-   color: #0e1a40 !important;
+.Ravenclaw_name h3{
+   color: #946b2d !important;
 }
 
-.ravenclaw_img{
-    background: #946b2d !important;
+.Ravenclaw_img{
+    background: #946b2daa !important;
+    border: solid 3px #0e1a40 !important;
 }
 
 
