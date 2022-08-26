@@ -126,14 +126,15 @@ dropdown-content li > a, .dropdown-content li > span{
     text-transform: uppercase ;
 }
 
-
-
 /* Gryffindor */
 .gryffindor:hover{
     background: #740001 !important;
 }
 
-/* Common Room */
+    /* Common Room */
+.Gryffindor_table{
+    margin-left: 40px !important;
+}
 .Gryffindor_data a, .Gryffindor_data tr{
     color: #740001;
 }
@@ -169,9 +170,22 @@ dropdown-content li > a, .dropdown-content li > span{
 }
 
 /* Common Room */
-.Slytherin_info{
-    background: #1a472a !important;
-    border: solid 3px #5d5d5d !important;
+.Slytherin_table{
+    margin-left: 40px !important;
+}
+
+.Slytherin_data a, .Slytherin_data tr{
+    color: #1a472a;
+}
+
+.Slytherin_data th{
+    color: #2a623d;
+    text-transform: uppercase;
+}
+
+.Slytherin_data{
+    background: #1a472acd  !important;
+    border: solid 3px  #5d5d5d !important;
 }
 
 .Slytherin_room{
@@ -181,11 +195,12 @@ dropdown-content li > a, .dropdown-content li > span{
 }
 
 .Slytherin_name h3{
-   color: #5d5d5d !important;
+   color:  #aaa9a9 !important;
 }
 
 .Slytherin_img{
-    background: #5d5d5d !important;
+    background: #1a472a !important;
+    border: solid 3px #5d5d5d !important;
 }
 
 /* Hufflepuff */
@@ -194,14 +209,23 @@ dropdown-content li > a, .dropdown-content li > span{
     background: #fff4b1 !important;
 } 
 
-/* Common Room */
-.Hufflepuff_table_right{
+    /* Common Room */
+.Hufflepuff_table{
     float: right !important;
     margin-right: 40px !important;
 }
 
-.Hufflepuff_info{
-    background: #fff4b1 !important;
+.Hufflepuff_data a, .Hufflepuff_data tr{
+    color: #212121;
+}
+
+.Hufflepuff_data th{
+    color: #212121;
+    text-transform: uppercase;
+}
+
+.Hufflepuff_data{
+    background: #fff4b1cc !important;
     border: solid 3px #212121 !important;
 }
 
@@ -217,6 +241,7 @@ dropdown-content li > a, .dropdown-content li > span{
 
 .Hufflepuff_img{
     background: #212121 !important;
+    border: solid 3px #fff4b1 !important;
 }
 
 /* Ravenclaw */
@@ -224,8 +249,8 @@ dropdown-content li > a, .dropdown-content li > span{
     background: #0e1a40 !important;
 }
 
-/* Common Room */
-.Ravenclaw_table_right{
+    /* Common Room */
+.Ravenclaw_table{
     float: right !important;
     margin-right: 40px !important;
 }
