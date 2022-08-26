@@ -20,7 +20,6 @@ module.exports = {
    
     addPerson: async (req, res) => {
         try {
-            console.log(req.body)
             await Character.create(req.body)
             console.log('Person has been added!')
             res.redirect("/dashboard");
