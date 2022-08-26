@@ -18,7 +18,16 @@
                                 <% if(el != "_id" && el != "image" && el !=
                                 "__v"){%>
                                 <th class="card center"><%= el %>:</th>
-                                <td class="center"><%= person[el] %></td>
+                                <td class="center">
+                                   <% if (person[el] == true){%>
+                                        Yes
+                                   <%} else if (person[el] == false){%>
+                                        No
+                                   <%} else{%>
+                                    <%=person[el]%>
+                                   <%}%>
+                                    
+                                </td>
                                 <% } %>
                             </tr>
                             <% } %>

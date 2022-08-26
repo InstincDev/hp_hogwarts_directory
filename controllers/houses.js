@@ -8,8 +8,6 @@ module.exports = {
             if(!person){
                 return res.render('errors/404')
             } 
-            for(let el in person){console.log(person[el])}
-         
             res.render('houses/person',{person})
         } catch (err){
               console.error(err)
