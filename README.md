@@ -50,8 +50,9 @@ Completed:
 - Implimented EJS Layaouts
 
 Future:
-- Add Authentication
-- Add specify access to information depending on users school status
+- Update directory information
+- User authentication
+- Specify access to information depending on users school status
 
 
 ## Lessons Learned
