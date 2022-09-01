@@ -1,7 +1,7 @@
 module.exports = {
     getLandingPg: (req, res)=>{
        try{
-            res.render('index')
+            res.render('index', {layout: "./layouts/landing"})
        } catch (err){
             console.error(err)
        }

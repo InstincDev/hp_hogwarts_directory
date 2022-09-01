@@ -21,6 +21,10 @@ h3{
     background: #ebca96 !important;
 }
 
+.home{
+    margin: 3rem auto;
+}
+
 
 
 .bold{
@@ -82,7 +86,11 @@ dropdown-content li > a, .dropdown-content li > span{
 
 /* Tables */
 .card{ 
-    background-color: #ebca9688
+    background-color: #ebca9688;
+}
+
+.card-base{
+    background: #ffe5a8;
 }
 
 /* Home Page */
@@ -92,6 +100,11 @@ dropdown-content li > a, .dropdown-content li > span{
 
 .hogwarts_card:hover{
     background: #212121 !important;
+}
+
+.house-card {
+    color: #ebca96 !important;
+    background: #ebca96;
 }
 
 .house-card, .house-card p {
