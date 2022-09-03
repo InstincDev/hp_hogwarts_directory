@@ -20,7 +20,7 @@ module.exports = {
         try {
             await Character.create(req.body)
             console.log('Person has been added!')
-            res.redirect("/dashboard");
+            res.redirect("/great_hall");
         } catch (err) {
             console.error(err);
             res.render("errors/500");
