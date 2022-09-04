@@ -10,13 +10,12 @@ Created to accompany [Harry Potter Themed MVC Lecture](https://youtu.be/__oXGxIc
 
 ## Demo
 
-Insert gif or link to demo
+https://hogwarts-school-directory.herokuapp.com
 
 
 ## Packages/Dependencies
 
 connect-mongo, dotenv, ejs, express, express-ejs-layouts, mongodb, mongoose, nodemon
-
 
 ## Installation
     clone https://github.com/insticdev/hp_hogwarts_directory
