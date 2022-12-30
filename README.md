@@ -6,8 +6,7 @@ Created to accompany [Harry Potter Themed MVC Lecture](https://youtu.be/__oXGxIc
 ## Demo
 ![hogwarts_school_directory](https://user-images.githubusercontent.com/67307808/188706189-0b69ecbb-3801-4627-b940-31fc1878d0fd.gif)
 
-https://hogwarts-school-directory.herokuapp.com
-
+https://hogwarts-school-directory.cyclic.app 
 
 ## Packages/Dependencies
 
