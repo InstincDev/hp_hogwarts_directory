@@ -30,8 +30,8 @@ app.use("/houses", housesRoutes);
 const PORT = process.env.PORT || 7000;
 
 app.listen(
-    PORT,
+    process.env.PORT, () =>{
     console.log(
         `Server running on ${process.env.NODE_ENV} mode on PORT ${PORT}`
     )
-);
+    });
