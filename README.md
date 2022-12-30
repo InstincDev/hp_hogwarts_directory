@@ -3,12 +3,8 @@
 A Harry Potter themed roster of Hogwarts students, staff, and alumni.
 Created to accompany [Harry Potter Themed MVC Lecture](https://youtu.be/__oXGxIcDCM) video.
 
-## Screenshots
-
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
-
-
 ## Demo
+![hogwarts_school_directory](https://user-images.githubusercontent.com/67307808/188706189-0b69ecbb-3801-4627-b940-31fc1878d0fd.gif)
 
 https://hogwarts-school-directory.herokuapp.com
 
